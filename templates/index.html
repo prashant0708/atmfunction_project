@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ATM PIN PAGE</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+      background-color: rgb(134, 188, 204);
+      position: relative;
+    }
+    .container {
+      width: 30%;
+      background-color: rgb(163, 241, 198);
+      padding: 30px 20px;
+      margin: 60px;
+      position: absolute;
+      left: 30%;
+      top: 100px;
+    }
+
+    h1 {
+      left:34%;
+      top:40px;
+      background-color: rgb(163, 241, 198);
+      text-align: Center;
+      width:30%;
+    }
+
+    .input {
+      background-color: rgb(163, 241, 198);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(214, 122, 127);
+      font-family: serif;
+      text-align: center;
+      color:
+
+      width: 100%;
+      background-color: rgba(255, 255, 128, .5);;
+      padding: 5px 5px;
+
+    }
+    .submit{
+      background-color: rgb(163, 241, 198);
+      display: flex;
+      justify-content: center;
+      padding: 5px 5px;
+
+
+    }
+
+    .form{
+      background-color: rgb(163, 241, 198);
+
+    }
+  </style>
+
+  <body>
+    <h1>Welcome to the officials website ATM</h1>
+    <div class="container">
+      <form class="form" method="POST" action="/pin_request">
+        <div class="input">
+          <label class="label" for="Pin">Enter the 4 digits pin!</label>
+          <input class="label" type="Text" name="pin" />
+        </div>
+        <div class="submit">
+          <input class="label" type="Submit" name="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

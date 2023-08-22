@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Money Deposit Page</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(134, 188, 204);
+      position: relative;
+    }
+    .container {
+      width: 30%;
+      background-color: rgb(163, 241, 198);
+      padding: 20px 20px;
+      margin: 60px;
+      position: absolute;
+      left: 30%;
+      top: 15px;
+    }
+
+    h1,
+    h2 {
+      background-color: rgb(163, 241, 198);
+      text-align: Center;
+      padding: 10px 10px;
+    }
+
+    strong{
+      background-color: rgb(163, 241, 198);
+      font-size=20px;
+      font-weight:bold;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2>Collect your cash {{amount}}</h2>
+      <h1>your account Balance is <strong> {{result}}</strong></h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Choose the option</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(134, 188, 204);
+      position: relative;
+    }
+    .container {
+      width: 30%;
+      background-color: rgb(163, 241, 198);
+      padding: 20px 20px;
+      margin: 60px;
+      position: absolute;
+      left: 30%;
+      top: 15px;
+    }
+    h1 {
+      background-color: rgb(163, 241, 198);
+      text-align: Center;
+    }
+    .label {
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(214, 122, 127);
+      font-family: serif;
+      text-align: center;
+      color:
+
+      width: 100%;
+      background-color: rgba(255, 255, 128, .5);;
+      padding: 5px 5px;
+
+    }
+    .submit{
+      background-color: rgb(163, 241, 198);
+      display: flex;
+      justify-content: center;
+      padding: 5px 5px;
+
+
+    }
+
+    .form{
+      background-color: rgb(163, 241, 198);
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form class="form" action="/action/input" method="POST">
+        <h1>Choose the option</h1>
+        <div class="submit">
+          <input
+            class="label"
+            type="Submit"
+            name="balance_check"
+            value="Balance Check"
+          />
+        </div>
+        <div class="submit">
+          <input
+            class="label"
+            type="Submit"
+            name="money_withdraw"
+            value="Money Withdraw"
+          />
+        </div>
+        <div class="submit">
+          <input
+            class="label"
+            type="Submit"
+            name="money_deposit"
+            value="Money deposit"
+          />
+        </div>
+      </form>
+    </div>
+    {{result}}
+  </body>
+</html>
